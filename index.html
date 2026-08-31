@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Your Perfect Match Today</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+      background: linear-gradient(145deg, #0b0a1a 0%, #1a1a2e 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      line-height: 1.5;
+    }
+
+    .card {
+      max-width: 680px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 48px;
+      padding: 48px 40px 40px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 215, 150, 0.05) inset;
+      text-align: center;
+      transition: transform 0.25s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff6b8a, #ee2d5a);
+      padding: 6px 18px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      background: linear-gradient(to right, #fff 30%, #ffb6c9);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 16px;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    .subhead {
+      font-size: 1.2rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 32px;
+      font-weight: 400;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .highlight {
+      color: #ff8aa8;
+      font-weight: 500;
+    }
+
+    .feature-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+
+    .feature-item {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 8px 18px;
+      border-radius: 60px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(4px);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .feature-item::before {
+      content: "✦";
+      color: #ff6b8a;
+      font-weight: 300;
+      font-size: 1.1rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff4d7a, #d61c4e);
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 700;
+      padding: 18px 44px;
+      border-radius: 120px;
+      text-decoration: none;
+      box-shadow: 0 12px 35px rgba(214, 28, 78, 0.4);
+      transition: all 0.2s ease;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      letter-spacing: 0.3px;
+      margin: 8px 0 20px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.04);
+      box-shadow: 0 16px 45px rgba(214, 28, 78, 0.6);
+      background: linear-gradient(135deg, #ff5f87, #e02056);
+    }
+
+    .cta-button:active {
+      transform: scale(0.96);
+    }
+
+    .disclaimer {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.25);
+      margin-top: 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      padding-top: 24px;
+      letter-spacing: 0.2px;
+    }
+
+    .disclaimer a {
+      color: rgba(255, 255, 255, 0.35);
+      text-decoration: none;
+    }
+
+    .disclaimer a:hover {
+      color: #ff8aa8;
+      text-decoration: underline;
+    }
+
+    /* responsive */
+    @media (max-width: 550px) {
+      .card {
+        padding: 32px 20px 28px;
+        border-radius: 32px;
+      }
+      h1 {
+        font-size: 2.1rem;
+      }
+      .subhead {
+        font-size: 1rem;
+      }
+      .cta-button {
+        font-size: 1.2rem;
+        padding: 16px 28px;
+      }
+      .feature-item {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">✨ Premium Dating • Verified Singles</div>
+    <h1>Your Next<br>Love Story Starts Here</h1>
+    <p class="subhead">
+      Connect with <span class="highlight">authentic, like-minded</span> people in your area. 
+      No games, just real chemistry.
+    </p>
+
+    <div class="feature-grid">
+      <span class="feature-item">100% verified profiles</span>
+      <span class="feature-item">Smart matching</span>
+      <span class="feature-item">Private &amp; secure</span>
+    </div>
+
+    <!-- YOUR LINK IS HERE -->
+    <a href="https://hotsexdatetoday.com/GVXDXHws?aid=gkdfdxphhx&kid=hgzkazxxkgg" 
+       class="cta-button" 
+       target="_blank" 
+       rel="noopener noreferrer">
+      🔥 Meet Singles Now
+    </a>
+
+    <p style="color: rgba(255,255,255,0.4); font-size: 0.9rem; margin-top: -6px; margin-bottom: 6px;">
+      ⏳ Free registration • 2,300+ online now
+    </p>
+
+    <div class="disclaimer">
+      <p>18+ only. By clicking you agree to our <a href="#">Terms</a> &amp; <a href="#">Privacy Policy</a>.</p>
+      <p style="margin-top: 6px;">This is a promotional landing page for dating marketing purposes.</p>
+    </div>
+  </div>
+</body>
+</html>
